@@ -1,0 +1,158 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #212121;
+    --celeste: #4cb8b3;
+    --rojo: #e63e20;
+    --violeta: #752f97;
+    --amarillo: #fef46d;
+}
+
+/* generales */
+
+body{
+    background-image: linear-gradient(to top, #dfe9f3 0%, #ffffff 100%);
+    width: 100%;
+}
+
+p,h1,h2{
+    color: var(--negro);
+}
+
+.sombras{
+    box-shadow: 10px 5px 15px 0px rgba(110,108,110,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+}
+
+.margin{
+    margin: 5rem;
+}
+
+@media (max-width: 500px) {
+    .margin{
+        margin: 2rem 0.5rem;
+    }
+}
+
+/* colores para texto,etc */
+
+.color-rojo{
+    color: var(--rojo);
+}
+
+.color-celeste{
+    color: var(--celeste);
+}
+
+.color-violeta{
+    color: var(--violeta);
+}
+
+.texto-borde {
+    -webkit-text-stroke: 1px var(--celeste);
+    color: transparent;
+    text-transform: uppercase;
+  }
+
+/* nav y header */
+
+.imagen-header{
+    background-image: url(../imagenes/desarrollo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    width: 100%;
+}
+
+.contenido-header{    
+    width: 100%;
+    height: 93%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (min-width: 900px) {
+    .imagen-header{
+        height: 900px;
+    }
+
+    .contenido-header{
+        height: 63%;
+    } 
+}
+
+
+@media (min-width: 992px) {
+    .imagen-header{
+        height: 980px;
+    }
+
+    .contenido-header{
+        height: 88%;
+    }
+
+}
+
+@media (min-width: 1048px) {
+    .imagen-header{
+        height: 980px;
+    }
+
+    .contenido-header{
+        height: 93.5%;
+    }
+
+}
+
+.fondo-oscuro{
+    background-color: rgba(0, 0, 0, .6); 
+    background-color: rgb(0 0 0/ 55%);
+}
+
+
+/* nav(botones) */
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.pBtn{
+    margin: 0;
+    padding: 0rem 1rem 0rem 1rem;
+    color: var(--amarillo);
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.pBtn-secundario{
+    color: var(--violeta);
+}
+
+/* sobre Mi */
+
+.tamaño-sobreMi{
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height:15rem ;
+    width:15rem ;
+}
+
+@media (max-width: 500px) {
+    .tamaño-sobreMi{
+        height:10rem ;
+        width:10rem ;
+        padding-left: 2rem;
+    }
+}
+
+negrita{
+    font-weight: 500;
+}
