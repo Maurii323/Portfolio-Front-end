@@ -1,0 +1,76 @@
+:root {
+    --blanco: #ffffff;
+    --negro: #212121;
+    --celeste: #4cb8b3;
+    --rojo: #e63e20;
+    --violeta: #752f97;
+    --amarillo: #fef46d;
+}
+
+/* generales */
+
+body{
+    background-image: linear-gradient(to top, #dfe9f3 0%, #ffffff 100%);
+    width: 100%;
+}
+
+p,h1,h2{
+    color: var(--negro);
+}
+
+.sombras{
+    box-shadow: 10px 5px 15px 0px rgba(110,108,110,0.48);
+    background-color: var(--blanco);
+    padding: 2rem;
+}
+
+.margin{
+    margin: 0rem 5rem;
+}
+
+.relleno{
+    padding: 4rem;
+}
+
+@media (max-width: 500px) {
+    .margin{
+        margin: 2rem 0.5rem;
+    }
+}
+
+.centrar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@media (min-width: 900px) {
+    .fijo{
+        position: fixed;
+        width: 100%;
+        box-shadow: 0px 0px 15px 0px rgba(85, 83, 85, 0.48);
+        background-image: linear-gradient(to top, #dfe9f3 0%, #ffffff 100%);
+    }
+}
+
+
+
+/* colores para texto,etc */
+
+.color-rojo{
+    color: var(--rojo);
+}
+
+.color-celeste{
+    color: var(--celeste);
+}
+
+.color-violeta{
+    color: var(--violeta);
+}
+
+.texto-borde {
+    -webkit-text-stroke: 1px var(--celeste);
+    color: transparent;
+    text-transform: uppercase;
+  }
